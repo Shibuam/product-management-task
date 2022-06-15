@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import { Home } from "./Pages/Home";
 
-function App() {
+import {
+  BrowserRouter, Route, Routes
+} from "react-router-dom";
+import { AddProduct } from "./Pages/AddProduct";
+import { RemoveProduct } from "./Pages/RemoveProduct";
+import { List } from "./Pages/List";
+
+export var userContext = createContext(null)
+
+
+const App = () => {
+
+
+
+  const [products, setProducts] = useState([])
+  const [no, setNo] = useState(0)
+
+  console.log(no, "nono");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <userContext.Provider value={{ no: no, setNo: setNo, products, setProducts }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add" element={<AddProduct />} />
+          <Route path="/remove" element={<RemoveProduct />} />
+          <Route path="/list" element={<List />} />
+        </Routes>
+      </BrowserRouter>
+    </userContext.Provider>
   );
 }
 
