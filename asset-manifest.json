@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Shibuam.github.io/product-management-task/static/css/main.e7720ab7.css",
-    "main.js": "/Shibuam.github.io/product-management-task/static/js/main.17e4629d.js",
-    "index.html": "/Shibuam.github.io/product-management-task/index.html",
-    "main.e7720ab7.css.map": "/Shibuam.github.io/product-management-task/static/css/main.e7720ab7.css.map",
-    "main.17e4629d.js.map": "/Shibuam.github.io/product-management-task/static/js/main.17e4629d.js.map"
+    "main.css": "/product-management-task/static/css/main.e7720ab7.css",
+    "main.js": "/product-management-task/static/js/main.17e4629d.js",
+    "index.html": "/product-management-task/index.html",
+    "main.e7720ab7.css.map": "/product-management-task/static/css/main.e7720ab7.css.map",
+    "main.17e4629d.js.map": "/product-management-task/static/js/main.17e4629d.js.map"
   },
   "entrypoints": [
     "static/css/main.e7720ab7.css",
