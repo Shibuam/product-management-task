@@ -28,8 +28,7 @@ export const RemoveForm = () => {
                         qtyres=0
                     }
                     obj.qty = qtyres.toString();
-                    chec.splice(chec.indexOf(obj), 1)
-                    chec.push(obj)
+                 
                 }
             }
             
@@ -65,7 +64,7 @@ navigate('/')
 
 
                         <>
-                        {/* ++++++++++++++++ */}
+                     
                         <Col sm={4} className='mt-3'>
                                     <Card >
                                         <Card.Body>
@@ -79,20 +78,20 @@ navigate('/')
                                                     required
                                                     />
                                                 <Form.Text className="text-muted">
-                                                    {/* We'll never share your email with anyone else. */}
+                                               
                                                 </Form.Text>
                                             </Form.Group>
 
                                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                                <Form.Label>Product Name</Form.Label>
+                                                <Form.Label>Product Quantity</Form.Label>
                                                 <Form.Control
                                                     {...register(`Quantity ${index}`, { required: true })}
                                                     type="text"
-                                                    placeholder="Enter Product name" 
+                                                    placeholder="Enter Product quantity" 
                                                     required
                                                     />
                                                 <Form.Text className="text-muted">
-                                                    {/* We'll never share your email with anyone else. */}
+                                                   
                                                 </Form.Text>
                                             </Form.Group>
                                        
@@ -102,7 +101,7 @@ navigate('/')
                                     </Col>
 
 
-                          {/* ++++++++++++++++ */}
+                   
                            
                         </>
 

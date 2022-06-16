@@ -26,8 +26,7 @@ export const AddForm = () => {
                 if (obj !== undefined) {
                     let qtyres = parseInt(obj.qty) + parseInt(pro.qty)
                     obj.qty = qtyres.toString();
-                    chec.splice(chec.indexOf(obj), 1)
-                    chec.push(obj)
+             
                 }
                 else {
                     chec.push(pro);
