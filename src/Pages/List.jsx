@@ -6,7 +6,7 @@ import { userContext } from '../App'
 export const List = () => {
 
     const { products } = useContext(userContext)
-    console.log(products, "??????")
+   
     return (
         <Container>
             <div className='mt-3 text-center'>

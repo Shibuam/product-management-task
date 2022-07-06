@@ -13,7 +13,7 @@ export const RemoveForm = () => {
     const navigate=useNavigate()
     const onSubmit = data => {
 
-        console.log(data);
+    
         let name, code, qty, pro
         let chec = products
         for (let i = 0; i < no; i++) {
